@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday — My Forever</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+  <div id="stage" class="centered">
+    <!-- Intro Cake -->
+    <div id="intro" class="card">
+      <div class="cake-wrap" id="cakeWrap">
+        <div class="cake">
+          <div class="icing"></div>
+          <div class="candles" id="candles">
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="hint">👉 Swipe left or right to blow the candles</div>
+    </div>
+
+    <!-- Celebration -->
+    <div id="celebrate" class="card hidden">
+      <div id="messageBig">Happy Birthday<br><span class="heart">My Forever ♥️🫂</span></div>
+      <div id="petals"></div>
+    </div>
+
+    <!-- Envelope Stage -->
+    <div id="envelopeStage" class="card hidden">
+      <div class="envelope" id="envelope">
+        <div class="heart">❤</div>
+        <div class="cardInside" id="cardText"></div>
+      </div>
+      <div class="hint small">Tap the envelope to open 🎁</div>
+    </div>
+  </div>
+  <div id="confetti"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
