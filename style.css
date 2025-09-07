@@ -1,0 +1,24 @@
+*{box-sizing:border-box;font-family:Inter, system-ui, sans-serif;}
+html,body{height:100%;margin:0;background: linear-gradient(180deg,#fff8f0,#ffecec);color:#222;}
+.centered{display:flex;align-items:center;justify-content:center;height:100vh;padding:20px;}
+.card{width:360px;max-width:92vw;text-align:center;}
+.hidden{display:none;}
+.cake-wrap{display:flex;justify-content:center;margin-bottom:14px;}
+.cake{width:260px;height:160px;background:#c85a8a;border-radius:18px 18px 10px 10px;position:relative;box-shadow:0 8px 18px rgba(0,0,0,0.12);}
+.cake .icing{position:absolute;left:8px;right:8px;top:0;height:56px;background:linear-gradient(180deg,#fff6f8,#ffd9e8);border-radius:12px 12px 0 0;}
+.candles{position:absolute;top:-26px;left:18%;right:18%;display:flex;justify-content:space-between;}
+.candle{width:10px;height:36px;background:#fff5d6;border-radius:3px;position:relative;}
+.flame{width:12px;height:16px;background: radial-gradient(circle at 40% 30%, #ffe07a 0%, #ffb84d 40%, #ff7b3a 80%);border-radius:50% 50% 40% 40%;position:absolute;top:-18px;animation:flicker 400ms infinite;}
+@keyframes flicker{0%,100%{transform:scale(1)}50%{transform:scale(0.95) translateY(-1px)}}
+.hint{color:#5a3a5a;font-size:14px;margin-top:6px;}
+.hint.small{font-size:12px;margin-top:10px;opacity:0.8;}
+#celebrate .heart{color:#b8005a;font-size:22px;}
+#messageBig{font-weight:700;font-size:28px;color:#3b1f2b;}
+#petals{height:120px;margin-top:10px;}
+.petal{position:absolute;width:14px;height:14px;background:radial-gradient(circle,#fff2f8,#ffd1e6);border-radius:6px;animation:petal-fall 1200ms forwards;}
+@keyframes petal-fall{0%{opacity:1;transform:translateY(-40px)}100%{opacity:1;transform:translateY(80px)}}
+.envelope{width:320px;height:220px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,0.12);position:relative;cursor:pointer;}
+.envelope .heart{position:absolute;top:-36px;left:50%;transform:translateX(-50%);background:linear-gradient(180deg,#ff9fc9,#ff5588);color:white;padding:10px;border-radius:50%;width:68px;height:68px;display:flex;align-items:center;justify-content:center;font-size:20px;}
+.cardInside{width:88%;height:120px;background:#fff;border-radius:8px;padding:12px;transform:translateY(30px);opacity:0;transition:all 400ms;overflow:auto;text-align:left;font-size:15px;color:#442a3a;}
+.open .cardInside{transform:translateY(6px);opacity:1;}
+#confetti{position:fixed;left:0;top:0;width:100%;height:100%;pointer-events:none;}
